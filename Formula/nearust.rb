@@ -1,25 +1,25 @@
 class Nearust < Formula
   desc "Fast detection of similar strings"
   homepage "https://github.com/yutanagano/nearust"
-  version "0.6.0"
+  version "0.6.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/yutanagano/nearust/releases/download/v0.6.0/nearust-aarch64-apple-darwin.tar.xz"
-      sha256 "85f5ac895203b09b5415559ea65a9c999d62939a6b5cadae9cfe2d3536b13453"
+      url "https://github.com/yutanagano/nearust/releases/download/v0.6.1/nearust-aarch64-apple-darwin.tar.xz"
+      sha256 "cbdfb417dcb0791d1d03297ebc5b65a71af6b321e9c6506db9f234954e141e00"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/yutanagano/nearust/releases/download/v0.6.0/nearust-x86_64-apple-darwin.tar.xz"
-      sha256 "13992e50cf8cd6129d737d1768f6e25483452deb2ecbd7feb87a15c599a6a658"
+      url "https://github.com/yutanagano/nearust/releases/download/v0.6.1/nearust-x86_64-apple-darwin.tar.xz"
+      sha256 "ae2031cd9c748164d33337c21f5e6141a36ff410f69f930cadb4b9208c863432"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/yutanagano/nearust/releases/download/v0.6.0/nearust-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "5da21581c9a8f1c2c8bb6bdcc1204668e3dea1579158f432acf71ad750530d87"
+      url "https://github.com/yutanagano/nearust/releases/download/v0.6.1/nearust-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "244fbd27c5e9a76f3d5ae1331264dd7f234be7357bcdefc4eab67b18b8478861"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/yutanagano/nearust/releases/download/v0.6.0/nearust-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "85a861d8de21131a2f00eb04d122970a01e30008c0f2ff12c6852589c0d5ae59"
+      url "https://github.com/yutanagano/nearust/releases/download/v0.6.1/nearust-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "efce134c3a709a7ee1dc68113add04179b0a1cbe076845a8bbc4a07fb2391d9c"
     end
   end
 
