@@ -1,25 +1,25 @@
 class SymscanCli < Formula
   desc "Fast discovery of similar strings in bulk"
   homepage "https://github.com/yutanagano/symscan"
-  version "0.7.1"
+  version "0.7.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/yutanagano/symscan/releases/download/v0.7.1/symscan-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "5f7db7fe25125c3702f0c314906aced3ae5afaccdf045d31537f88f65b43b67f"
+      url "https://github.com/yutanagano/symscan/releases/download/v0.7.2/symscan-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "3b7f84d2c5a97d2daa470681e9b4920ad13f70bbeff21cc7c4105655d21890ea"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/yutanagano/symscan/releases/download/v0.7.1/symscan-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "c52cc5da56d81ce9c3a46bcbee7a984bc496199e112b61036276a574ebd8164f"
+      url "https://github.com/yutanagano/symscan/releases/download/v0.7.2/symscan-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "4cc8f9484ed78c4db68e5f52eda8dc0642f2ec3aa73ddeefee2029cfb9f2e39b"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/yutanagano/symscan/releases/download/v0.7.1/symscan-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "5017fc58478e9d49dd63c256416b168ee1a91765a4909feac791284c86ad554d"
+      url "https://github.com/yutanagano/symscan/releases/download/v0.7.2/symscan-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "c74d0dd79d7122429d2fbe74589857c3a7d7356f957fa36300f342d621152d9d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/yutanagano/symscan/releases/download/v0.7.1/symscan-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "517f170b0278e1559fb4690f44a7e9f3ed0d039c5f4c49716365016034e10d42"
+      url "https://github.com/yutanagano/symscan/releases/download/v0.7.2/symscan-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "bb19892efbf4e84374b3d6d23326c3ef9b1aed5d287b50b7c1d5578d9b45ef45"
     end
   end
 
@@ -47,10 +47,10 @@ class SymscanCli < Formula
   end
 
   def install
-    bin.install "symscan-cli" if OS.mac? && Hardware::CPU.arm?
-    bin.install "symscan-cli" if OS.mac? && Hardware::CPU.intel?
-    bin.install "symscan-cli" if OS.linux? && Hardware::CPU.arm?
-    bin.install "symscan-cli" if OS.linux? && Hardware::CPU.intel?
+    bin.install "symscan" if OS.mac? && Hardware::CPU.arm?
+    bin.install "symscan" if OS.mac? && Hardware::CPU.intel?
+    bin.install "symscan" if OS.linux? && Hardware::CPU.arm?
+    bin.install "symscan" if OS.linux? && Hardware::CPU.intel?
 
     install_binary_aliases!
 
