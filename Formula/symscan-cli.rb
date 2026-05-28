@@ -1,30 +1,31 @@
 class SymscanCli < Formula
   desc "Fast discovery of similar strings in bulk"
   homepage "https://github.com/yutanagano/symscan"
-  version "0.7.2"
+  version "0.8.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/yutanagano/symscan/releases/download/v0.7.2/symscan-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "3b7f84d2c5a97d2daa470681e9b4920ad13f70bbeff21cc7c4105655d21890ea"
+      url "https://github.com/yutanagano/symscan/releases/download/v0.8.0/symscan-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "ed8616fa198272b2ab048f19ce5b8f38c8040d436e6928d4b62f91a361d83712"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/yutanagano/symscan/releases/download/v0.7.2/symscan-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "4cc8f9484ed78c4db68e5f52eda8dc0642f2ec3aa73ddeefee2029cfb9f2e39b"
+      url "https://github.com/yutanagano/symscan/releases/download/v0.8.0/symscan-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "fc689d7592626aeca1a291835d1ef5fc7aa3447873daf55d87b9a943b46a9a7f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/yutanagano/symscan/releases/download/v0.7.2/symscan-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "c74d0dd79d7122429d2fbe74589857c3a7d7356f957fa36300f342d621152d9d"
+      url "https://github.com/yutanagano/symscan/releases/download/v0.8.0/symscan-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "834887c0869b2a2e3398572badaba99fad54b4be1a65ae6436b1c01bf35cdf8e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/yutanagano/symscan/releases/download/v0.7.2/symscan-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "bb19892efbf4e84374b3d6d23326c3ef9b1aed5d287b50b7c1d5578d9b45ef45"
+      url "https://github.com/yutanagano/symscan/releases/download/v0.8.0/symscan-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "4abbad25206af5ad050c02d51b0df158e001767f1f91b91b21ca4587b59da4a7"
     end
   end
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":      {},
+    "aarch64-pc-windows-gnu":    {},
     "aarch64-unknown-linux-gnu": {},
     "x86_64-apple-darwin":       {},
     "x86_64-pc-windows-gnu":     {},
