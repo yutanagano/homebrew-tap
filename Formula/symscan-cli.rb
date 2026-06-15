@@ -1,25 +1,25 @@
 class SymscanCli < Formula
   desc "Fast discovery of similar strings in bulk"
   homepage "https://github.com/yutanagano/symscan"
-  version "0.8.1"
+  version "0.8.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/yutanagano/symscan/releases/download/v0.8.1/symscan-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "056b9d6e007042c18f97da1190c8fa6d4bb1498228432b57b6889bf7cf629b3d"
+      url "https://github.com/yutanagano/symscan/releases/download/v0.8.2/symscan-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "ddd12920868427df8ff1d412687b794d1d8ca7664143a9378af1531d63108c59"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/yutanagano/symscan/releases/download/v0.8.1/symscan-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "81dd107624ef72f72640ed95bf455ce03044519f9f11c7698babec3ae57368b4"
+      url "https://github.com/yutanagano/symscan/releases/download/v0.8.2/symscan-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "78ce56c01e01641814b0511f4966aca5a9a3606b4adcc093fbc83da1bfa7a62b"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/yutanagano/symscan/releases/download/v0.8.1/symscan-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "8fdd0d45e18c74fc250247e60ed7fb8f1adc6da80a6e54b1ed8ab415c18deba2"
+      url "https://github.com/yutanagano/symscan/releases/download/v0.8.2/symscan-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "a22e55328b74cb1780be52f8bba2d0e38b8ce32cb6f6592ca3373656bc4d2490"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/yutanagano/symscan/releases/download/v0.8.1/symscan-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "b2d60bbb6cf43b0559f4512df183b2680d09175434969624fbbfdcdfdf4f98a5"
+      url "https://github.com/yutanagano/symscan/releases/download/v0.8.2/symscan-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "06f8953525dae90e72f4afc1800479f4675250b5a7a1fc13dc57439c0b48715c"
     end
   end
 
